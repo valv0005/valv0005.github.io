@@ -2,4 +2,42 @@ body {
     color:blue;
 }
 
-/*This is a CSS comment*/
+/* change color of a paragraph and list items*/
+p, li {
+    color: green;
+ }
+
+/*Targetin child elements*/
+
+section h1 {
+    color: darkred;
+ }
+
+ /* style a class*/
+ .secondary-heading {
+     color:purple;
+  }
+
+  /* style and id*/
+  #main-section {
+      color: pink;
+      font-weight: bold;
+   }
+   /*LVHA*/
+   a:link {
+       color:red;
+    }
+    a:visited {
+        color:gray;
+     }
+
+    a:hover {
+        color:black;
+     }
+    }
+    a:active {
+        color:white;
+     }
+    a [href="http://algonquincollege.com" ] {
+        color:green;
+    }   
