@@ -13,6 +13,10 @@ section h1 {
     color: darkred;
  }
 
+ body section.main-wrapper #primary-article.doorknob article > p { /* 0,1,2,4 */
+    color: orange;
+}
+
  /* style a class*/
  .secondary-heading {
      color:purple;
