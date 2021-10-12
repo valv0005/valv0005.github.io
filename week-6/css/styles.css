@@ -1,0 +1,19 @@
+body {
+    font-family: verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #eee;
+    background-image: url("../images/white_brick_wall.png");
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.italics {
+    font-style: italic;
+}
