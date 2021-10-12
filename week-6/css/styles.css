@@ -13,8 +13,17 @@ body {
     background-size: contain;
 }
 
+header {
+    color: white;
+    background-color: cornsilk;
+    background-image: url("../images/bread.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
 h1 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 p {
