@@ -1,0 +1,90 @@
+html{
+    box-sizing: border-box;
+}
+  
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+}
+
+/*  floating text
+nav {
+    float: right;
+} */
+
+/* navigation bar inline */
+nav ul li {
+    display: inline-block;
+    width: 100px;
+}
+
+nav ul li:after {
+    content: "GENERATED CONTENT";
+}
+
+/* box model example to use in assignment*/
+.box {
+    width: 200px;
+    background-color: aquamarine;
+    color:white;
+    /* introduce box model*/
+    padding: 10px;
+    border: 5px solid rebeccapurple;
+    margin: 10px;
+    /* float boxes beside each other*/
+    float: left;
+}
+
+/* center a box level element */
+/* .box1 {
+    margin: 0px auto;
+} */
+
+.box1 {
+    box-sizing: content-box;
+}
+
+.box2 {
+    box-sizing: border-box;
+}
+
+.clearfix :after{
+    content: "";
+    display: block;
+    clear: both;    
+}
+
+.clear {
+    clear: left;
+}
+
+/* css positioning */
+.stage {
+    height: 500px;
+    background-color: grey;
+    /* to set the next content inside this block*/
+    position: relative;
+
+}
+
+.prop {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    
+    /* add posiotioning values*/
+    /* position: relative;
+    top: 100px;
+    right: 10px; */
+
+    /* Example of position absolut
+    position: absolute;
+    top: 50px;
+    width: 100%; */
+
+    /* position: fixed;
+    top: -50px;
+    left: 200px; */
+   
+}
