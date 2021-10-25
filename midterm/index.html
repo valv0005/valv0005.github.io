@@ -17,9 +17,9 @@
     </div>
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">STORY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="home">HOME</a></li>
+                <li><a href="#" class="story">STORY</a></li>
+                <li><a href="#" class="contact">CONTACT</a></li>
             </ul>
         </nav>
     <!-- Content for the main section. Includes article, forms and unordered list -->
@@ -33,36 +33,39 @@
             </div>
         </article>
         <section>
-            <h3>Facts About Starfish</h3>
-            <ul>
-                <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
-                <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
-                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
-            </ul>
+            <div class="facts">
+                <h3>Facts About Starfish</h3>
+                <ul class="list-facts">
+                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                </ul>
+            </div>
         </section>
         <section>
-            <h4>Contact to learn more</h4>
-            <form>
-                <label for="yname">Your Name</label><br>
-                <input type="text" id="yname" name="yname"><br>
-                <label for="ymail">Your Email</label><br>
-                <input type="text" id="ymail" name="ymail"><br>
-                <label for="ymsg">Your Message</label><br>
-                <textarea for="ymsg"></textarea>
-            </form>
-            <p>Would you like to visit the starfish?</p>
-            <form>
-                <label for="option-y">Yes</label>
-                <input type="radio" id="yes" name="response-y" value="yes">
-                <label for="option-n">No</label>
-                <input type="radio" id="no" name="response-n" value="no">
-                <label for="option-m">Maybe</label>
-                <input type="radio" id="maybe" name="response-m" value="maybe"><br>
-                <input type="submit" value="Send">
-            </form>
+            <div class="contact-form">
+                <h4>Contact to learn more</h4>
+                <form>
+                    <label for="yname">Your Name</label><br>
+                    <input type="text" id="yname" name="yname"><br>
+                    <label for="ymail">Your Email</label><br>
+                    <input type="text" id="ymail" name="ymail"><br>
+                    <label for="ymsg">Your Message</label><br>
+                    <textarea for="ymsg"></textarea>
+                    <!-- Question  -->
+                    <p>Would you like to visit the starfish?</p>
+                    <label for="option-y">Yes</label>
+                    <input type="radio" id="yes" name="response-y" value="yes">
+                    <label for="option-n">No</label>
+                    <input type="radio" id="no" name="response-n" value="no">
+                    <label for="option-m">Maybe</label>
+                    <input type="radio" id="maybe" name="response-m" value="maybe"><br>
+                    <input type="submit" class="button" value="SEND">
+                </form>
+            </div>
         </section>
     </main>
-    <footer>©Lone Starfish</footer>
+    <footer class="footer">©Lone Starfish</footer>
 </body>
 </html>
