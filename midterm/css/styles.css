@@ -1,0 +1,91 @@
+
+body {
+    background-color: #aad4cf;
+    font-family: arial, sans-serif;
+
+    display: grid;
+    grid-template-columns: 1024px;
+    justify-content: center;
+    margin-top: 0;
+}
+
+body > .container, nav, main, footer {
+    background-color: #d4e9e7;
+    
+}
+
+/* It sets the navigation bar */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; 
+}
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    width: 337px;
+    display: block;
+    padding: 0;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+}
+
+/* It sets the position and attributes for the header and text header */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    letter-spacing: 2px;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+/* The image floats to the left in the paragraph*/
+
+.article{
+    width: 1010px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+
+}
+.article > img{
+    width: 245px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 18px;
+  }
+
+.article > p {
+    line-height: 1.44;
+    margin-right: 15px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 26px;
+}
