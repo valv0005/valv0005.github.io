@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Demo</title>
+    <style>
+
+        /* mobile */
+        body {
+            background: pink;
+            font-size: 1.5rem;
+        }
+
+        header {
+            background: white;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .small {
+            display: block;
+
+        }
+
+        .large{
+            display: none;
+        }
+        
+        /* tablet widht  approx 600-1000px */
+        @media screen and (min-width: 600px) and (max-width: 999px) {
+         /* Styles applied for minimum width of 650px and over */
+        
+
+            body{
+                font-size: 2.5rem;
+            }
+
+            header {
+                background: green;
+            }
+
+            .container {
+                width: 500px;
+            }
+        }
+
+        /* desktop */
+        @media screen and (min-width: 1000px) {
+         /* Styles applied for minimum width of 650px and over */
+        
+
+            body{
+                font-size: 3.5rem;
+            }
+
+            header {
+                background: red;
+            }
+
+            .container {
+                width: 900px;
+            }
+            .small {
+            display: none;
+
+            }
+
+            .large{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container"></div>
+            <h1>Header</h1>
+        </div>
+    </header>
+   
+        <main>
+            <img class="small" src="./img/01.jpg">
+
+            <img class="large" src="./img/VSy6kJDNq2pSXsCzb6cvYF.jpg">
+
+            <div class="container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate natus, rerum odio illum iusto minus. Error hic exercitationem numquam, et distinctio in possimus consequuntur illum sed modi inventore rerum similique.</p>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                &copy; Algonquin College
+            </div>
+        </footer>
+    
+</body>
+</html>
