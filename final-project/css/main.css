@@ -1,0 +1,521 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* The maximum width of the container is 1200px
+Add media query for the screen size of 760px and above
+Use the 'Open Sans' Google font for the webpage
+Colours values used in the layout #c78c06, #ffe6ac, #222 and white
+Use of CSS Grid properties for a minimum of one element
+Use of CSS Flexbox properties for a minimum of one element 
+Follow proper folder structure and naming conventions
+CSS code is valid
+CSS is properly formatted
+Proper link to GitHub Pages site submitted
+Overall design and match with the provided mockup
+Include comments in your CSS and with any changes made to your HTML */
+
+/************************************************************************/
+/******************* My Code start from here  ***************************/
+/************************************************************************/
+
+ /****************** MOBILE-FIRST STYLES ********************************/ 
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px ;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    /*padding: 14px;*/
+}
+
+/* Navigation*/
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.upper a {
+    color: #c78c06;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li .home {
+    background-color:#c78c06;
+    color:#222;
+}
+
+.logo {
+    background-color: #c78c06;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display:flex;
+}
+
+.upper input {
+    font-family: arial;
+    font-size: 18px;
+    width: 100vh;
+    height: 40px;
+}
+
+.upper button {
+    font-size: 20px;
+    background-color: #222;
+    border: 1px solid #c78c06;
+    padding: 7px 7px 7px 7px;
+    color: #c78c06;
+}
+
+/* banner*/
+
+* {
+    box-sizing: border-box;
+}
+
+.intro {
+    background-color: white;
+    background-image: url(/valv0005.github.io/final-project/images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.intro .welcome-content {
+    margin-top: 6.5px;
+    position: relative;
+    top: 100px;
+    background: rgb(0, 0, 0);/* Fallback color */
+    background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
+    width: 100%;
+    height: 463;
+    padding-top: 70px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 70px;
+    
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 98px;
+    font-weight: bold;
+}
+
+.intro p{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.intro button {
+    font-size: 21px;
+    padding-left: 32px;
+    padding-right: 30px;
+    padding-top: 33px;
+    padding-bottom: 35px;
+    background-color: #c78c06;
+    border: none;
+    color: #000;
+    margin-top: 9px;
+}
+
+span {
+    font-size: 25px;
+}
+
+/* About us section*/
+
+.section-about{
+    background-color: #ffe6ac;
+    padding: 14px;
+}
+
+.section-about img {
+    width: 100%;
+    height: auto;
+}
+
+.section-about h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.section-about p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+/* Our services section*/
+
+.section-services {
+    background-color: #fff;
+    padding: 14px;
+}
+
+.section-services img {
+    width: 100%;
+    height: auto;
+}
+
+.section-services h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 39px;
+    margin-bottom: 27px;
+}
+
+.section-services h3{
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+}
+
+.section-services p {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.section-services button {
+    font-size: 21px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    margin-left: 15px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    padding-left: 33px;
+    padding-right: 30px;
+    padding-bottom: 33px;
+    padding-top: 33px;
+}
+
+.transformation {
+    background-color: #ffe6ac;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    margin-top: 14px;
+}
+
+.video-production {
+    background-color: #ffe6ac;
+    margin-top: 14px;
+}
+
+.web-development {
+    background-color: #ffe6ac;
+    margin-top: 14px;
+}
+
+.print {
+    background-color: #ffe6ac;
+    margin-top: 14px;
+}
+
+/* Our vision styles*/
+
+.vision-content{
+    vertical-align: center;
+}
+
+.vision-content h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 28px;
+}
+
+.vision-content p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 18px;
+}
+
+.vision-content button {
+    font-size: 22px;
+    color: #fff;
+    background: rgb(0, 0, 0);/* Fallback color */
+    background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
+    border: 1px solid #c78c06;
+    margin-top: 13px;
+    padding-left: 33px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+
+}
+
+.section-ourvision {
+    background-color: white;
+    background-image: url(/valv0005.github.io/final-project/images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    max-width: 100%;
+    height: 276px;
+    display: block;
+    padding: 14px;
+}
+
+/* Team section styles */
+
+.section-team {
+    background-color: #fff;
+    padding: 14px;
+}
+
+.section-team h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.section-team img {
+    width: 100%;
+    height: auto;
+}
+
+.section-team h3 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-top: 23px;
+    letter-spacing: -1.5px;
+}
+
+.section-team h4 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-top: 13px;
+}
+
+.section-team hr{
+    border: 1px solid #c78c06;
+    background-color: #c78c06;
+    margin-left: 15px;
+    margin-right: 14px;
+    margin-top: 4px;
+}
+
+.section-team p{
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 17px;
+    padding-bottom: 29px;
+}
+
+.section-team .john {
+    background-color: #ffe6ac;
+    margin-top: 28px;
+}
+
+.section-team .bob {
+    background-color: #ffe6ac;
+    margin-top: 14px;
+}
+
+/* Contact us section styles*/
+
+.section-contact {
+    padding: 14px;
+}
+.section-contact h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.section-contact h3 {
+    font-size: 32px;
+    font-weight: bold;  
+}
+
+.contact-form h3 {
+    margin-top: 35px;
+    margin-bottom: 14px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.contact-form input[type=text] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 7.5px 0;
+    border: 1px solid #848484;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 148px;
+    border-radius: 4px;
+    border: 1px solid #848484;
+    margin: 8px 0;
+}
+
+.contact-form [type=submit] {
+    background-color: #222;
+    color:#c78c06;
+    font-size: 22px;
+    border: none;
+    margin-top: 12px;
+
+}
+
+.table-hours h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.table-hours th {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    background-color: #ffe6ac;
+    border: 1px solid #222;
+
+}
+
+.table-hours td {
+    border: 1px solid #222;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 14px;
+}
+
+.map h3 {
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    font-size: 14px;
+    padding-left: 14px;
+    padding-top: 32px;
+    padding-bottom: 14px;
+}
+
+footer a {
+    color: #c78c06;
+}
+
+footer p {
+    margin-top: 16px;
+}
+
+/* section contact us styles*/
+
+
+/*** Styles Mobile ****/
+
+ /* ==== This just sets the width for accuracy to the mock-up ==== */
+        /* Don't put anything else in this media query! */
+
+@media screen and (min-width: 760px) {
+    .upper {
+        width: 706px;
+    }    
+}
+
+/***** Styles desktop****/
+
+@media screen and (min-width: 1200px) {
+    .upper {
+        width: 1200px;
+    }
+}
