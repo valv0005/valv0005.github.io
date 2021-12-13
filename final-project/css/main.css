@@ -137,7 +137,7 @@ nav ul li .home {
 
 .intro {
     background-color: white;
-    background-image: url(../images/main-banner.jpg);
+    background-image: url('../images/main-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -323,7 +323,7 @@ span {
 
 .section-ourvision {
     background-color: white;
-    background-image: url(../images/vision.jpg);
+    background-image: url('../images/vision.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
