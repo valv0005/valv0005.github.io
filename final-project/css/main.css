@@ -74,18 +74,17 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 14px ;
+    padding: 14px;
 }
 
 header {
     background: #222;
     color: #fff;
-    /*padding: 14px;*/
 }
 
 /* Navigation*/
+
 nav ul {
-    list-style: none;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -129,6 +128,7 @@ nav ul li .home {
     color: #c78c06;
 }
 
+
 /* banner*/
 
 * {
@@ -154,7 +154,7 @@ nav ul li .home {
     background: rgb(0, 0, 0);/* Fallback color */
     background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
     width: 100%;
-    height: 463;
+    height: 463px;
     padding-top: 70px;
     padding-bottom: 14px;
     padding-left: 14px;
@@ -168,7 +168,7 @@ h1 {
     font-weight: bold;
 }
 
-.intro p{
+.intro p {
     font-size: 14px;
     line-height: 21px;
 }
@@ -227,13 +227,13 @@ span {
 }
 
 .section-services h2 {
-    font-size: 48px;
+    font-size: 54px;
     font-weight: bold;
-    margin-top: 39px;
-    margin-bottom: 27px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
-.section-services h3{
+.section-services h3 {
     font-size: 32px;
     font-weight: bold;
     padding-left: 15px;
@@ -442,7 +442,6 @@ span {
     font-size: 22px;
     border: none;
     margin-top: 12px;
-
 }
 
 .table-hours h3 {
@@ -498,24 +497,307 @@ footer p {
     margin-top: 16px;
 }
 
-/* section contact us styles*/
-
-
-/*** Styles Mobile ****/
+/********************* Styles Mobile *************************************/
 
  /* ==== This just sets the width for accuracy to the mock-up ==== */
         /* Don't put anything else in this media query! */
 
 @media screen and (min-width: 760px) {
-    .upper {
+    .container  {
         width: 706px;
+        margin: 0 auto;
     }    
 }
 
-/***** Styles desktop****/
+/******************************* Styles desktop *****************************************************/
 
 @media screen and (min-width: 1200px) {
-    .upper {
-        width: 1200px;
+    
+    .container {
+        width: 1168px;
+        /*padding: 0 16px;*/
     }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 35px 0;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-list .item {
+        display: inline-block;
+        font-size: 20px;
+        width: 147px;
+    }
+    
+    .logo {
+        background-color: transparent;
+        margin-right: 60px;
+    }
+
+    .search {
+        width: 220px;
+        height: 44px;
+        font-family: arial;
+        font-size: 20px;
+    }
+
+    .search button {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .intro .welcome-content {
+        width: 1200px;
+        height: 500px;
+        margin: 0px;
+        position: inherit;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 16px;
+    }
+
+    .welcome-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .welcome-content button {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 81px;
+        line-height: 118px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 54px;
+        line-height: 1;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 36px;
+        line-height: 1;
+        font-weight: bold;
+        margin-bottom: 0.8em;
+    }
+
+    .section-about {
+       display: grid;
+       justify-content: center;
+       padding-top: 15px;
+       padding-bottom: 24px;
+    }
+
+    .section-about img {
+        width: 50%;
+        float: left;
+        padding-right: 16px;
+    }
+
+    .about-content {
+        width: 1168px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section-services {
+        width: 1168px;
+        margin: auto;
+        padding: 0px;
+        margin-bottom: 14px;
+    }
+    
+    .section-services h2 {
+        width: 100%;
+    }
+
+    /* flexblox*/
+    .container-serv {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .transformation {
+        order: 1;
+        flex-grow: 2;
+        flex-basis: 49.3%;
+    }
+
+    .marketing {
+        order: 2;
+        flex-basis: 49.3%;
+    }
+
+    .video-production {
+        order: 3;
+        flex-grow: 1;
+        flex-basis: calc(10vh - 1vh);
+    }
+
+    .web-development {
+        order: 4;
+        flex-grow: 1;
+        flex-basis: calc(10vh - 1vh);
+    }
+
+    .print {
+        order: 5;
+        flex-grow: 1;
+        flex-basis: calc(10vh - 1vh);
+    }
+
+    /* styles content for each container-serv in our services */
+    
+    .container-serv .transformation-content, .mark-content, .video-content, .web-content, .print-content  {
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+
+    .container-serv .transformation, .marketing, .video-production, .web-development, .print  {
+        margin-top: 0px;
+    }
+
+    .container-serv h3 {
+        padding-left: 0px;
+    }
+
+    .container-serv button {
+        width: 100%;
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .container-serv p {
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 0;  
+    }
+
+    /* our vision*/
+
+    .vision-content {
+        max-width: 1168px;
+        margin: auto;
+    }
+
+    .vision-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .section-ourvision {
+        width: 100%;
+    }
+
+    /* grid john*/
+    .john {
+        width: 1168px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* grid bob*/
+    .bob {
+        width: 1168px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+    }
+
+    .bob-content {
+        grid-column: 1;
+    }
+
+    .img-b {
+        grid-column: 2;
+    }
+
+    .section-team {
+        max-width: 1168px;
+        margin: auto;
+    }
+
+    .section-team .bob {
+        margin-top: 0px;
+    }
+
+    .teamates p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* contact section */
+
+    .section-contact {
+        max-width: 1168px;
+        margin: auto;
+    }
+
+    .contact-container {
+        display: flex;
+        max-width: 1168px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: baseline;
+    }
+
+    .contact-form {
+        order: 1;
+        flex-grow: 2;
+        flex-basis: 49%;
+        margin-right: 16px;
+    }
+
+    .map {
+        order: 2;
+        flex-basis: 49%;
+    }
+
+    .table-hours {
+        order: 3;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+    .contact-form [type=submit] {
+        font-size: 24px;
+        font-family: Arial;
+    }
+
+    .section-contact h2 {
+        margin-bottom: 35px;
+    }
+
+    .contact-container h3 {
+        margin-top: 40px;
+    }
+
+    /* footer section*/
+    .footer {
+        max-width: 1168px;
+        margin: auto;
+    }
+
 }
+
+    
